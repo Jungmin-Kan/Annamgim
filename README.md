@@ -1,6 +1,8 @@
 # Annamgim
-Annamgim app_블록체인 아이디어톤
-모바일 코드 입니다.
+Annamgim app_블록체인 아이디어톤 모바일 코드 입니다.
+
+# 주최측
+https://www.blockchainidea2019.org/
 
 ![img](img1.JPG)
  <br/>인증 화면<br/><br/>
