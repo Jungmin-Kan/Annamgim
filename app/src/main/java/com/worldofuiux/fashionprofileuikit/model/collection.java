@@ -2,9 +2,6 @@ package com.worldofuiux.fashionprofileuikit.model;
 
 import android.view.View;
 
-/**
- * Created by World Of UI/UX on 17/4/19.
- */
 public class collection {
     private String title;
     private String description;
