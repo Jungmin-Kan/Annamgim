@@ -23,7 +23,7 @@ public class CollectionAdapterPay extends RecyclerView.Adapter<CollectionAdapter
     private List<collectionpay> albumList;
 
     int[] myImageList = {R.drawable.gradient1, R.drawable.gradient2, R.drawable.gradient3,
-            R.drawable.gradient4, R.drawable.gradient5}; // 컬랙션 배경 색깔
+            R.drawable.gradient4, R.drawable.gradient5};
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView tvTitle, tvDescription, Tagtext;
