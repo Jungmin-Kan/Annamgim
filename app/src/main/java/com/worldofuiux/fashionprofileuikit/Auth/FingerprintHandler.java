@@ -13,7 +13,7 @@ import android.os.CancellationSignal;
 
 import com.worldofuiux.fashionprofileuikit.MainActivity;
 
-//@TargetApi(Build.VERSION_CODES.M)//이녀석은 또 처음 보는군.
+//@TargetApi(Build.VERSION_CODES.M)
 //public class FingerprintHandler extends FingerprintManager.AuthenticationCallback {
 //    CancellationSignal cancellationSignal;
 //    private Context context;
