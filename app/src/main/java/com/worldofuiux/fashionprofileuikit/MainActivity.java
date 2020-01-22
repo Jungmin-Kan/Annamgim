@@ -36,19 +36,14 @@ import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.zip.Inflater;
 
-/**
- * Created by World Of UI/UX on 17/4/19.
- */
 
 public class MainActivity extends AppCompatActivity {
 
     private Context mContext = MainActivity.this;
-    private Activity activity = MainActivity.this; //================>★
+    private Activity activity = MainActivity.this;
 
-    //    ImageView imgProfile;
     private Intent intent;
     private String name;
-    //    ==========================================================================
     private ArrayList<collectionpay> collectionListpay; // 리싸이클 뷰 목록 종류
     private RecyclerView recyclerViewCollectionpay; //  슬라이드 박스(내용물 담을 통)
     private CollectionAdapterPay collectionAdapterPay; // 이벤트 리스너, 및 내용물 등록 어댑터
@@ -57,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> description = new ArrayList<String>(); // 결재내역
 
 
-//     ==========================================================================
 
     private ArrayList<collection> collectionList2; // 리싸이클 뷰 목록 종류
     private RecyclerView recyclerViewCollection2; //  슬라이드 박스(내용물 담을 통)
@@ -111,11 +105,11 @@ public class MainActivity extends AppCompatActivity {
         collectionListpay = new ArrayList<>();
 
         for (int x = 0; x < title.size(); x++) {
-            collectionpay collectionpay = new collectionpay(title.get(x), description.get(x)); // 콜랙션 변수에 설정할 내역을 담은 뒤 리스트에 등록한다.
+            collectionpay collectionpay = new collectionpay(title.get(x), description.get(x));
             collectionListpay.add(collectionpay);
         }
-        collectionAdapterPay = new CollectionAdapterPay(mContext, collectionListpay); //생성자 (메인 그자체, 데이터를 담은 배역)  CollectionAdapter//===========>
-        recyclerViewCollectionpay.setAdapter(collectionAdapterPay);  // RecyclerView
+        collectionAdapterPay = new CollectionAdapterPay(mContext, collectionListpay);
+        recyclerViewCollectionpay.setAdapter(collectionAdapterPay);
 
         /**결제할 카드목록*/
         recyclerViewCollection2 = findViewById(R.id.RecyclerViewCollection2);
@@ -123,11 +117,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCollection2.setItemAnimator(new DefaultItemAnimator());
         collectionList2 = new ArrayList<>();
         for (int i = 0; i < title2.length; i++) {
-            collection collection2 = new collection(title2[i], description2[i],image2[i], i); // 콜랙션 변수에 설정할 내역을 담은 뒤 리스트에 등록한다.
+            collection collection2 = new collection(title2[i], description2[i],image2[i], i);
             collectionList2.add(collection2);
         }
-        collectionAdapter2 = new CollectionAdapter(mContext, collectionList2, intent, activity); //생성자 (메인 그자체, 데이터를 담은 배역)  CollectionAdapter//===========> 액티비티를 지워야할지 말아야할지... 어허..
-        recyclerViewCollection2.setAdapter(collectionAdapter2);  // RecyclerView
+        collectionAdapter2 = new CollectionAdapter(mContext, collectionList2, intent, activity);
+        recyclerViewCollection2.setAdapter(collectionAdapter2);
 
 
         ((Switch) findViewById(R.id.a)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
