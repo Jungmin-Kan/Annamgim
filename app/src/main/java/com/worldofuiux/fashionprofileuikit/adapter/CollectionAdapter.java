@@ -26,9 +26,7 @@ import com.worldofuiux.fashionprofileuikit.model.collection;
 import java.util.List;
 import java.util.MissingFormatArgumentException;
 
-/**
- * Created by World Of UI/UX on 17/4/19.
- */
+
 public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.MyViewHolder> {
 
     private Context mContext;
@@ -37,7 +35,7 @@ public class CollectionAdapter extends RecyclerView.Adapter<CollectionAdapter.My
     private Activity activity;
     private boolean canPay;
     int[] myImageList = {R.drawable.gradient1, R.drawable.gradient2, R.drawable.gradient3,
-            R.drawable.gradient4, R.drawable.gradient5}; // 컬랙션 배경 색깔
+            R.drawable.gradient4, R.drawable.gradient5};
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView tvTitle, tvDescription, Tagtext;
